@@ -1,0 +1,33 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint:html": "htmlhint \"**/*.html\"",
+    "lint:css": "stylelint \"css/**/*.css\" --fix",
+    "test": "npm run lint:html && npm run lint:css"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "no-descending-specificity": null,
+      "selector-class-pattern": null,
+      "font-family-no-missing-generic-family-keyword": null,
+      "color-hex-length": null,
+      "declaration-property-value-no-unknown": null,
+      "property-no-deprecated": null,
+      "selector-pseudo-element-no-unknown": null,
+      "selector-pseudo-class-no-unknown": null,
+      "no-duplicate-selectors": null
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "htmlhint": "^1.9.2",
+    "stylelint": "^17.12.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
